@@ -7,9 +7,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(99, 126, 149);
+    position: relative;
 }
 .navbar {
-    position:fixed;
+    position:absolute;
     right: 10px;
     padding: 10px;
     font-size: 20px;
@@ -37,6 +38,7 @@ a:hover{
 
 .supra {
     
+
     border: 3px solid black;
     border-left: none;
     border-radius: 35px;
@@ -55,11 +57,18 @@ nav {
     border-radius: 10px;
     
 }
+p {
+    margin-left: 30px;
+    margin-right: 30px ;
+    line-height: 1.2;
+    font-size: large;
 
+}
 .color {
     background-color:rgb(231, 215, 215) ;
     position: relative;
     top: 20px;
+    
     
 }
 
@@ -69,44 +78,43 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     align-content: center;
+   
     
 }
 
 .flex-item {
-    margin: 10px;
+    margin: 15px;
     border: 3px solid black;
+    border-radius: 5px;
+
     
     
 }
 
 .flex-item1 {
+   max-width: 350px;
     
-    min-height: auto;
-    min-width: auto;
-    
-    flex-grow: 1;
     
 }
 
 .flex-item2 {
-    min-height: auto;
-    min-width: auto;
+   
   
 }
 
 .flex-item3 {
-    min-height: 100px;
+    
 }
 
 
 .flex-item4 {
-    min-height: 100px;
+    
 }
 
 
 
 h2{
-    color: blue;
+    color: rgb(1, 1, 8);
     border-top: 3px solid;
     margin: 20px;
 }
@@ -119,11 +127,37 @@ h2~p {
 
 footer {
     background-color: bisque;
-    height: 10vh;
-    padding-top: 100px;
+    height: .2vh;
+    padding-top: 25px;
     border-top: 10px solid rgb(77, 132, 77);
 
 }
 a .flex-item:hover{
     opacity: 30%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    li a {
+        display: block;
+        position: relative;
+        top:-30px;
+        margin: -10px;
+    }
+    .color {
+        font-size: 55%;
+    }
+    .flex-item1 {
+        display: flex;
+    }
 }
