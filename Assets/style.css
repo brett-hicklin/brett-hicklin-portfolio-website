@@ -23,7 +23,9 @@ li {
     color: blue;
     margin: 5px;  
 } 
-
+li:hover{
+    border-color:white;
+}
 .position {
     position: fixed;
     left:0;
@@ -46,27 +48,52 @@ nav {
     color: black;
     margin: 10px 20px;
     border-radius: 10px;
+    
 }
 
 .color {
     background-color:rgb(231, 215, 215) ;
     position: relative;
     top: 20px;
+    
 }
 
-.display {
+.flexbox-container {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    ;justify-content: space-around;
-    flex-direction: column;
-    
-    
-  
+    align-content: center;
     
 }
 
-.mainproj {
-    flex-grow: 3;
+.flex-item {
+    margin: 10px;
+    border: 3px solid black;
+    
     
 }
+
+.flex-item1 {
+    
+    min-height: 100px;
+    min-width: 100px;
+    flex-grow: 1;
+    
+}
+
+.flex-item2 {
+    min-height: 100px;
+    min-width: 100px;
+    
+}
+
+.flex-item3 {
+    min-height: 100px;
+}
+
+
+.flex-item4 {
+    min-height: 100px;
+}
+
