@@ -103,3 +103,27 @@ nav {
     min-height: 100px;
 }
 
+
+
+h2{
+    color: blue;
+    border-top: 3px solid;
+    margin: 20px;
+}
+
+h2~p {
+    color: rgb(160, 160, 168);
+    
+    
+}
+
+footer {
+    background-color: bisque;
+    height: 10vh;
+    padding-top: 100px;
+    border-top: 10px solid rgb(77, 132, 77);
+
+}
+a .flex-item:hover{
+    opacity: 30%;
+}
