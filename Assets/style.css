@@ -1,27 +1,24 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /* sets font and color to webpage*/
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(99, 126, 149);
-    position: relative;
 }
+
 /* positions navbar links according to top right*/
-.navbar {
-    position:absolute;
-    right: 10px;
-    padding: 20px;
-    font-size: 20px;
-}
-    /*characteristics for navbar links*/
-li {
+ #navbar {
     display:inline;
-    font-size: 100%;
-    margin: 5px;  
+    position:relative;
+    margin: 5px;
+    left:70%;
+    bottom: -35px;
+    font-size: 20px;
 } 
+ 
 /* pseudo class for links, including navbar and email*/
 a:hover{
     color:white;
@@ -48,12 +45,19 @@ a:hover{
     left: 20px;
 }
 /*sets text in p elements*/
-p {
-    margin: 0 30px;
+p,
+.columnlist {
+    margin: 30px 30px;
     line-height: 1.2;
     font-size: large;
 }
 
+ .columnlist {
+   columns: 3;
+   display: list-item;
+   color:rgb(160, 160, 168); 
+   
+}
 /* sets "work" images to flex*/
 .flexbox-container {
     display: flex;
@@ -96,37 +100,52 @@ a .item:hover{
 
 
 /* adjusting navbar, name, and image for smaller devices*/
-@media (max-width: 900px) {
-    li a {
+@media (max-width: 600px) {
+    #navbar {
         display: block;
         position: relative;
-        top:-30px;
-        margin: -10px;
+        top:60px;
+        left: 75%;
+        margin: 5px;
+        
+
     }
     .nameposition {
-        font-size: 55%;
+        position: relative;
+        top: 10px;
+        left: 5px;
     }
     .flex-item1 {
         display: flex;
-    }
 
+    }
+    .columnlist {
+        font-size: 100% ;
+        
+    }
 }
 /* adjusting navbar, name, and image for even smaller devices*/
 
-@media (max-width:360px) {
-.navbar {
-    font-size:15px;
-    position:absolute;
-    right: -40px;
-    padding: 20px;
-    top: 10px;
+@media (max-width:500px) {
+#navbar {
+    display: block;
+    position: relative;
+    top:60px;
+    left: 75%;
+    margin: 5px;
+    font-size: 80%;
 }
 .nameposition {
     position: relative;
-    top: 20px;
+    top: 10px;
     left: 5px;
+    font-size: 50%;
 }
 .item.item1 {
     max-width: 250px;
+}
+.columnlist {
+    font-size: 80% ;
+    list-style:none
 }
 }
