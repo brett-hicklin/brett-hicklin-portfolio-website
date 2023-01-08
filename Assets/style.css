@@ -26,7 +26,7 @@ a:hover{
 }
 
 /* characteristics for avatar "supra" logo*/
-.supra {
+.avatar {
     
     border: 3px solid black;
     border-left: none;
@@ -65,7 +65,9 @@ p,
     align-items: center;
     flex-wrap: wrap;
     align-content: center;  
+    position:relative;
 }
+
 /* sets margin and border for "work" items*/
 .item {
     margin: 15px;
