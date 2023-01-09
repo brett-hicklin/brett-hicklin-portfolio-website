@@ -8,7 +8,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(99, 126, 149);
 }
-
+/* changes text color and removes line decoration for the navbar links */
+a {
+    color: black;
+    text-decoration: none;
+}
 /* positions navbar links according to top right*/
  #navbar {
     display:inline;
@@ -94,12 +98,11 @@ a .item:hover{
 }
 /* changes color. decoration and location on email address*/
 .email {
-    display: block;
     color: black;
     text-decoration: none;
     text-align: center;
     position: relative;
-    bottom: 25px;
+    left: 45%;
 }
 
 
