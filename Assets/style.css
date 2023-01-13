@@ -3,10 +3,23 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+nav {
+    background-color: rgb(76, 103, 130);
+    width: 100%;
+    height: 70px;
+    border-bottom:3px solid;
+    border-image-source:linear-gradient(to right, rgb(76, 103, 130), black) ;
+    border-image-slice: 100;
+    box-shadow: 5px 3px 10px black;
+    
+    
+}
 /* sets font and color to webpage*/
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(99, 126, 149);
+    /* background-color: rgb(115, 146, 173); */
+    background-image: linear-gradient(to bottom right, rgb(115, 146, 173), rgb(70, 99, 121));
+
 }
 /* changes text color and removes line decoration for the navbar links */
 a {
@@ -34,31 +47,23 @@ a:hover{
 
 /* characteristics for avatar "supra" logo*/
 .avatar {
-    
-  height: 405px;
+  height: 255px;
   border-radius: 15px;
-  border: 3px solid gray;
+  border: 3px solid  gray;
   margin: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-
-
-    /* border: 3px solid black;
-    border-left: none;
-    border-radius: 35px;
-    box-shadow: 5px 5px 5px rgb(80, 101, 119);;
-    margin: 10px;
-    position: relative;
-    right: -37%;
-    top: -30px;
-    opacity: .8; */
+ 
 }
 /* positions my name accordingly*/
 .nameposition {
-    position: relative;
+
+    margin-left: 30px;
+
+    /* position: relative;
     top: 20px;
-    left: 20px;
+    left: 200px; */
 }
 /*sets text in p elements*/
 p,
@@ -113,8 +118,9 @@ a .item:hover{
     color: black;
     text-decoration: none;
     text-align: center;
-    position: relative;
-    left: 45%;
+    padding-bottom: 50px;
+    /* position: relative;
+    left: 45%; */
 }
 
 
