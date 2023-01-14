@@ -110,6 +110,11 @@ p,
 /* sets max width on the largest image, item 1 under "work"*/
 .item1 {
    max-width: 350px;
+   background-color: white ;
+}
+
+.item2 {
+    background-color: white;
 }
 /* sets color and border for each section*/
 h2{
@@ -168,6 +173,10 @@ a .item:hover{
     }
     
 } 
+html,body {
+    width: 100%;
+    overflow-x: hidden;
+}
 /* adjusting navbar, name, and image for even smaller devices*/
 
 @media (max-width:500px) {
