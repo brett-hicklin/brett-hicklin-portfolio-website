@@ -1,8 +1,9 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 /* puts a background image on the navbar */
 nav {
     background-color: rgb(112, 144, 176);
@@ -11,9 +12,6 @@ nav {
     margin-bottom: 25px;
     box-shadow: 0 3px 2px -2px black;
     background-image: url("./images/Aruba2.png");
-
-
-    
 }
 
 /* sets font and color to webpage*/
@@ -21,62 +19,65 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     /* background-color: rgb(115, 146, 173); */
     background-image: linear-gradient(to bottom right, rgb(115, 146, 173), rgb(70, 99, 121));
-
 }
+
 /* changes text color and removes line decoration for the navbar links */
 a {
     color: black;
     text-decoration: none;
 }
+
 /* positions navbar links according to top right*/
 nav li {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     margin: 5px;
     padding-left: 10px;
-    left:70%;
+    left: 70%;
     bottom: -25px;
     font-size: 20px;
     text-transform: uppercase;
 }
+
 /* creates the block that displays under the link in the navbar */
 nav a::after {
     content: "";
-    display: block; 
+    display: block;
     height: 5px;
     width: 0%;
     background-color: white;
     position: absolute;
     transition: all ease-in-out 300ms;
 }
+
 /* makes the block appear under link when hovered */
 nav a:hover::after {
     width: 90%;
 }
 
 /* pseudo class for links, including navbar and email*/
-a:hover{
-    color:white;
+a:hover {
+    color: white;
     text-decoration: none;
 }
 
 /* characteristics for avatar "supra" logo*/
 .avatar {
-  height: 255px;
-  border-radius: 15px;
-  border: 3px solid  gray;
-  margin: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /* z-index: -1; */
- 
+    height: 255px;
+    border-radius: 15px;
+    border: 3px solid gray;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 /* positions my name accordingly*/
 .nameposition {
     margin-left: 30px;
-   
+
 }
+
 /*sets text in p elements*/
 p,
 .columnlist {
@@ -84,21 +85,23 @@ p,
     line-height: 1.2;
     font-size: large;
 }
+
 /* changes the listed items in About Me into 3 colums */
- .columnlist {
-   columns: 3;
-   display: list-item;
-   color:rgb(160, 160, 168); 
-   
+.columnlist {
+    columns: 3;
+    display: list-item;
+    color: rgb(160, 160, 168);
+
 }
+
 /* sets "work" images to flex*/
 .flexbox-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    align-content: center;  
-    position:relative;
+    align-content: center;
+    position: relative;
 }
 
 /* sets margin and border for "work" items*/
@@ -107,31 +110,36 @@ p,
     border: 3px solid black;
     border-radius: 5px;
 }
+
 /* sets max width on the largest image, item 1 under "work"*/
 .item1 {
-   max-width: 350px;
-   background-color: white ;
+    max-width: 350px;
+    background-color: white;
 }
 
 .item2 {
     background-color: white;
 }
+
 /* sets color and border for each section*/
-h2{
-    border-bottom:3px solid;
-    border-image-source:linear-gradient(to right, rgb(76, 103, 130), black) ;
+h2 {
+    border-bottom: 3px solid;
+    border-image-source: linear-gradient(to right, rgb(76, 103, 130), black);
     border-image-slice: 100;
-    box-shadow: 0 3px 2px -2px  black;
+    box-shadow: 0 3px 2px -2px black;
     margin-left: 25px;
 }
+
 /* sets text color in my "about me" section*/
 h2~p {
     color: rgb(160, 160, 168);
 }
+
 /*sets hover action over two selectable links/images*/
-a .item:hover{
+a .item:hover {
     opacity: 30%;
 }
+
 /* changes color. decoration and location on email address*/
 .email {
     color: black;
@@ -139,80 +147,85 @@ a .item:hover{
     text-align: center;
     padding: 25px 0px;
     /* padding-bottom: 50px; */
-   
+
 }
 
 
 /* adjusting navbar, name, and image for smaller devices*/
- @media (max-width: 1300px){
+@media (max-width: 1300px) {
     nav li {
-        left: 40%; 
+        left: 40%;
     }
 }
-    
 
- @media (max-width: 600px) {
+
+@media (max-width: 600px) {
     nav li {
         display: block;
         top: 1vh;
         left: 70vw;
         margin: 5px;
     }
-    
+
     .flex-item1 {
         display: flex;
-
     }
+
     .columnlist {
-        font-size: 100% ;
-        
+        font-size: 100%;
     }
 
     nav a:hover::after {
         width: 0;
     }
-    
-} 
-html,body {
+
+}
+
+html,
+body {
     width: 100%;
     overflow-x: hidden;
 }
+
 /* adjusting navbar, name, and image for even smaller devices*/
 
 @media (max-width:500px) {
     nav li {
         display: block;
         position: relative;
-        top:60px;
+        top: 60px;
         left: 70%;
         margin: 5px;
         font-size: 80%;
-}
-  .nameposition {
+    }
+
+    .nameposition {
         position: relative;
         top: 10px;
         left: 5px;
         font-size: 80%;
-}
+    }
+
     .item.item1 {
         max-width: 250px;
-}
-    .columnlist {
-        font-size: 80% ;
-        /* list-style:none */
-}
-}
-@media (max-width:355px) {
-    nav li {
-        left: 60%;
-        }   
-    h2 {
-        font-size:medium;
     }
 
     .columnlist {
-        columns:2;
-        
-    }   
-} 
+        font-size: 80%;
+        /* list-style:none */
+    }
+}
 
+@media (max-width:355px) {
+    nav li {
+        left: 60%;
+    }
+
+    h2 {
+        font-size: medium;
+    }
+
+    .columnlist {
+        columns: 2;
+    }
+}
