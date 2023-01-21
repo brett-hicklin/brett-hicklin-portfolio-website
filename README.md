@@ -9,7 +9,7 @@ This website was created to act as my portfolio, and to also show what I've lear
 
 You can run this website locally by using VScode's live server plugin. Right click on index file and select `Open with live server`
 
-This website can also be ran on Github PAges using the following link [Brett Hicklin's Portfolio website](https://brett-hicklin.github.io/brett-hicklin-portfolio-website/)
+This website can also be ran on Github Pages using the following link [Brett Hicklin's Portfolio website](https://brett-hicklin.github.io/brett-hicklin-portfolio-website/)
 
 Here is a screenshot of the website ![Website landing page](./Assets/images/portfolioWebsiteScreenshot.png)
 
