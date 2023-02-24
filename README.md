@@ -11,6 +11,6 @@ You can run this website locally by using VScode's live server plugin. Right cli
 
 This website can also be ran on Github Pages using the following link [Brett Hicklin's Portfolio website](https://brett-hicklin.github.io/brett-hicklin-portfolio-website/)
 
-Here is a screenshot of the website ![Website landing page](./Assets/images/portfolioWebsiteScreenshot.png)
+Here is a screenshot of the website ![Website landing page](./Assets/images/portfolio-website.png)
 
 
